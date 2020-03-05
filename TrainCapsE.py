@@ -182,6 +182,7 @@ class TrainCapsE():
                     sys.stdout.flush()
 
             train_loss /= n_batches
+            trans_e_loss.append(train_loss)
 
             if epoch % self.args.display_step == 0 or epoch == 1:
                 print('\r\033[K\r[{:3d}] train_loss: {:.5f} - learning rate: {}'
@@ -290,10 +291,11 @@ class TrainCapsE():
                 # rel_embeddings = net.rel_embeddings(torch.cat([pos_r_batch, neg_r_batch]))
 
                 loss_triplet = criterion(outputs, targets)
-                norm_loss = h_e.norm(2) + t_e.norm(2) + r_e.norm(2)
+                # norm_loss = h_e.norm(2) + t_e.norm(2) + r_e.norm(2)
 
-                loss = loss_triplet + self.args.conv_kb_weight_decay * norm_loss
-                #loss = loss_triplet**2
+                # loss = loss_triplet + self.args.conv_kb_weight_decay * norm_loss
+                # loss = loss_triplet**2
+                loss = loss_triplet
                 batch_loss = loss.item()
                 loss.backward()
                 optimizer.step()
@@ -325,7 +327,7 @@ class TrainCapsE():
                 f.write("%s\n" % item)
         f.close()
 
-        print('\nFinished Training ConvKB\n')
+        print('\nFinished Training CapsE\n')
         if torch.cuda.is_available():
             net.load_state_dict(torch.load(self.args.conv_kb_save_path))
         else:
@@ -447,7 +449,7 @@ if __name__ == '__main__':
         # conv_kb_loss_valid_path='/loss_valid_convkb.txt',
 
         trans_e_loss_path='loss_transe.txt',
-        conv_kb_loss_path='loss_convkb.txt',
+        conv_kb_loss_path='loss_capse.txt',
         conv_kb_eval_path='evaluation.txt',
 
         embedding_size=100,
@@ -505,8 +507,8 @@ if __name__ == '__main__':
                             if e.errno != errno.EEXIST:
                                 raise
                         args.trans_e_loss_path = os.path.join(folder,"loss_transe.txt")
-                        args.conv_kb_loss_path = os.path.join(folder,"loss_convkb.txt")
-                        args.conv_kb_eval_path = os.path.join(folder, "evaluation.txt")
+                        args.conv_kb_loss_path = os.path.join(folder,"loss_capse.txt")
+                        args.conv_kb_eval_path = os.path.join(folder,"evaluation.txt")
                         args.trans_e_save_path = os.path.join(folder,"TransE.pkl")
                         args.conv_kb_save_path = os.path.join(folder,"CapsE.pkl")
                         TrainCapsE(args).train()
