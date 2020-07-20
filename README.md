@@ -48,11 +48,11 @@ python TrainCapsE.py
 
 
 * With ConvKB model:
-    - Using [KMeans_convkb.ipynb]() to see result of K-means algorithm
-    - Using [KNN_convkb.ipynb]() to see result of K-Nearest Neighbor algorithm
+    - Using [KMeans_convkb.ipynb](https://github.com/hongquando/OsGenePrio/blob/master/KMeans_convkb.ipynb) to see result of K-means algorithm
+    - Using [KNN_convkb.ipynb](https://github.com/hongquando/OsGenePrio/blob/master/KNN_convkb.ipynb) to see result of K-Nearest Neighbor algorithm
 * With CapsE model:
-    - Using [KMeans_capse.ipynb]() to see result of K-means algorithm
-    - Using [KNN_capse.ipynb]() to see result of K-Nearest Neighbor algorithm
+    - Using [KMeans_capse.ipynb](https://github.com/hongquando/OsGenePrio/blob/master/KMeans_capse.ipynb) to see result of K-means algorithm
+    - Using [KNN_capse.ipynb](https://github.com/hongquando/OsGenePrio/blob/master/KNN_capse.ipynb) to see result of K-Nearest Neighbor algorithm
     
 ## Citation
 ```

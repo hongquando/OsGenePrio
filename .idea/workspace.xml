@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09dfcbe8-7450-4fd6-8d0c-8b8a3d993549" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TrainTransE.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parameters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrainCapsE.py" beforeDir="false" afterPath="$PROJECT_DIR$/TrainCapsE.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrainConvKB.py" beforeDir="false" afterPath="$PROJECT_DIR$/TrainConvKB.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/GENE/entity2count.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/GENE/entity2count.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/GENE/entity2id.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/GENE/entity2id.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/GENE/relation2id.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/GENE/relation2id.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/GENE/train2id.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/GENE/train2id.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/GENE/triplet2id.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/GENE/triplet2id.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/GENE/valid2id.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/GENE/valid2id.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/CapsuleLayer.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/CapsuleLayer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,13 +44,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="654" />
+          <entry key="md" value="661" />
           <entry key="py" value="568" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="653" />
+          <entry key="Markdown" value="660" />
           <entry key="Python" value="569" />
         </counts>
       </usages-collector>
@@ -110,8 +98,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="292">
-                <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+              <first_editor relative-caret-position="158">
+                <caret line="53" column="104" selection-start-line="53" selection-start-column="104" selection-end-line="53" selection-end-column="104" />
               </first_editor>
               <second_editor />
             </state>
@@ -227,11 +215,6 @@
               <item name="OsGenePrio" type="b2602c69:ProjectViewProjectNode" />
               <item name="OsGenePrio" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="OsGenePrio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OsGenePrio" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -269,10 +252,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="159" y="23" width="1415" height="707" extended-state="0" />
+    <frame x="79" y="23" width="1415" height="707" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22525108" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22525108" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -283,7 +266,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.055284552" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.29430893" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -435,8 +418,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="292">
-            <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+          <first_editor relative-caret-position="158">
+            <caret line="53" column="104" selection-start-line="53" selection-start-column="104" selection-end-line="53" selection-end-column="104" />
           </first_editor>
           <second_editor />
         </state>
