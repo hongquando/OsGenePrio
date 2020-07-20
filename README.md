@@ -5,14 +5,14 @@
 - More specifically, we compared the use of Convolutional Knowledge Base model (ConvKB) and Capsule Network-based Embedding Model (CapsE) to optimized genes vectors.
 - Finally, we evaluated results following two steps. By using link prediction performance to evaluate the vectorized model, then using unsupervised learning techniques to check the accuracy of candidate genes. In conclusion, K-means gave similar results compare to biologists predictions while K-Nearest Neighbor recommended genes that have similar attributes.
 
-##Installation
+## Installation
 * Clone this repo
 ```
 cd
 git clone https://github.com/hongquando/RiceNLP.git
 ```
 
-#Setup for testing model
+## Setup for testing model
 * To use result of ConvKB model, download [ConvKB](https://drive.google.com/file/d/1PrvejuEUC1iFPyBVH7TAcxlEUCljmlo8/view?usp=sharing)
   Place convert weights into ```/weights/```. 
 
@@ -26,7 +26,7 @@ git clone https://github.com/hongquando/RiceNLP.git
   - ```/support/pyrice.pkl```
   - ```/support/uniprot.pkl```
    
-##Training with OsGenePrio
+## Training with OsGenePrio
 ```
 # For ConvKB model
 
@@ -37,7 +37,7 @@ python TrainConvKB.py
 python TrainCapsE.py
 ```
 
-##Testing with OsGenePrio
+## Testing with OsGenePrio
 * Results on the validation set with 2 models:
  
     |   Evaluation  | ConvKB          | CapsE  |
@@ -54,7 +54,7 @@ python TrainCapsE.py
     - Using [KMeans_capse.ipynb]() to see result of K-means algorithm
     - Using [KNN_capse.ipynb]() to see result of K-Nearest Neighbor algorithm
     
-#Citation
+## Citation
 ```
 @inproceedings{Nguyen2018,
   author={Dai Quoc Nguyen and Tu Dinh Nguyen and Dat Quoc Nguyen and Dinh Phung},
