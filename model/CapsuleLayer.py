@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 import torch.nn.functional as F
+import parameters
 
 epsilon = 1e-9
 
@@ -105,7 +106,8 @@ class CapsuleLayer(nn.Module):
         # Initialize routing logits to zero.
         #b_ij: [batch_size, num_caps_l, num_caps_l_plus_1, 1, 1],
         if torch.cuda.is_available():
-            b_ij = Variable(torch.zeros(batch_size, self.num_caps_i, self.num_units, 1, 1)).cuda()
+            device = torch.device("cuda:"+parameters.DEVICE if torch.cuda.is_available() else "cpu")
+            b_ij = Variable(torch.zeros(batch_size, self.num_caps_i, self.num_units, 1, 1)).to(device)
         else:
             b_ij = Variable(torch.zeros(batch_size, self.num_caps_i, self.num_units, 1, 1))
 

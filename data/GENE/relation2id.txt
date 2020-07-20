@@ -1,13 +1,11 @@
-12
+10
 Protein	0
 GO	1
-Keyword_Uniprot	2
-Description	3
-Location	4
-Position	5
-CGSNL Gene Name	6
-Trait Class	7
-TO	8
-PO	9
-Keyword_Pyrice	10
-Name	11
+Keyword Uniprot	2
+Gene name synonym(s)	3
+Position	4
+CGSNL Gene Name	5
+TO	6
+PO	7
+Keyword Pyrice	8
+Name	9
